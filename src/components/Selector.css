@@ -1,0 +1,30 @@
+.selector__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  background-color: thistle;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+.selector__link {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  width: min(500px, 90vw);
+  background-color: rgb(56, 56, 56);
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 0px;
+  border-left: 10px solid thistle;
+  transition: 0.2s ease-in-out;
+}
+
+.selector__link:hover {
+  background-color: rgb(155, 137, 155);
+}
+.selector__link:active {
+  box-shadow: none;
+}

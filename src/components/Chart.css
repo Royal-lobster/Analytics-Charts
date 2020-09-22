@@ -1,0 +1,6 @@
+.chart {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 40px 20px;
+  box-shadow: 3px 3px 30px 10px rgb(0, 0, 0, 0.2);
+}

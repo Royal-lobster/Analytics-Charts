@@ -1,0 +1,13 @@
+.chartScreen__title {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 40px;
+  font-size: min(25px, 6vw);
+  padding: 0 30px;
+}
+.chartScreen__moreCharts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
