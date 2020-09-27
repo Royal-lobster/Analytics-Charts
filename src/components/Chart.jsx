@@ -8,12 +8,40 @@ function Chart({ data, type, h, w }) {
       <div className="chart">
         <Bar
           data={data}
-          options={{}}
+          options={{
+            tooltips: {
+              displayColors: true,
+              callbacks: {
+                mode: "x",
+              },
+            },
+            scales: {
+              xAxes: [
+                {
+                  stacked: true,
+                  gridLines: {
+                    display: false,
+                  },
+                },
+              ],
+              yAxes: [
+                {
+                  stacked: true,
+                  ticks: {
+                    beginAtZero: true,
+                  },
+                  gridLines: {
+                    display: false,
+                  },
+                },
+              ],
+            },
+            responsive: true,
+            maintainAspectRatio: false,
+            legend: { position: "bottom" },
+          }}
           width={w}
           height={h}
-          options={{
-            maintainAspectRatio: false,
-          }}
         />
       </div>
     );
@@ -37,11 +65,13 @@ function Chart({ data, type, h, w }) {
         <div className="chart">
           <Pie
             data={data}
-            options={{}}
             width={w}
             height={h}
             options={{
               maintainAspectRatio: false,
+              legend: {
+                position: "left",
+              },
             }}
           />
         </div>
